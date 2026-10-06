@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clean OOO — oxi-sanitização com ozônio e UV para ambientes e veículos.">
+<title>Clean OOO | Oxi-sanitização • Ozônio • UV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#075ee8;--cyan:#00c8e8;--navy:#06224f;--ink:#10213b;--soft:#eef8ff;--white:#fff;--shadow:0 18px 50px rgba(0,72,160,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#f8fcff}
+a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid #e5f0fb}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--navy)}.brand-bubble{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#dffaff,#59dfff);color:#0563d9;font-weight:900;box-shadow:inset 0 0 0 2px #fff,0 5px 15px #9eeaff}
+nav{display:flex;gap:22px;font-size:14px;font-weight:600}nav a:hover{color:var(--blue)}.menu{display:none}
+.hero{padding:70px 0 55px;background:radial-gradient(circle at 80% 10%,#d8f8ff,transparent 35%),linear-gradient(180deg,#f8fdff,#eaf8ff)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:45px}.eyebrow{display:inline-block;padding:8px 13px;border-radius:999px;background:#e0f6ff;color:#0571cb;font-weight:800;font-size:12px;letter-spacing:.04em}
+h1{font-size:clamp(40px,5vw,68px);line-height:1.02;margin:18px 0;color:var(--navy)}h1 span{color:var(--blue)}.hero p{font-size:18px;line-height:1.65;color:#4a617d;max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{padding:14px 20px;border-radius:14px;font-weight:800;border:1px solid #cfe4f5;display:inline-flex;align-items:center;justify-content:center}.primary{background:linear-gradient(135deg,#0565ef,#00bfe8);color:#fff;border:0;box-shadow:0 12px 25px rgba(0,125,235,.24)}.secondary{background:#fff;color:var(--navy)}
+.hero-art{position:relative}.hero-art img{width:100%;max-height:560px;object-fit:cover;border-radius:30px;box-shadow:var(--shadow);border:7px solid #fff}.floating{position:absolute;right:-10px;bottom:20px;background:#fff;padding:15px 18px;border-radius:18px;box-shadow:var(--shadow);font-weight:800;color:var(--navy)}
+section{padding:78px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 40px}.section-head h2{font-size:38px;margin:0 0 12px;color:var(--navy)}.section-head p{color:#5b718b;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e2eef8;border-radius:24px;padding:26px;box-shadow:var(--shadow)}.icon{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:#e8f8ff;font-size:24px}.card h3{margin:17px 0 8px}.card p{color:#62758b;line-height:1.65}
+.process{background:linear-gradient(135deg,#061f49,#075ee8);color:#fff}.process .section-head h2,.process .section-head p{color:#fff}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:22px;border:1px solid rgba(255,255,255,.2);border-radius:20px;background:rgba(255,255,255,.09)}.num{font-size:13px;font-weight:900;opacity:.7}.step h3{margin:12px 0 7px}.step p{margin:0;line-height:1.55;opacity:.85}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.visual{width:100%;border-radius:28px;box-shadow:var(--shadow);border:5px solid #fff}.checklist{display:grid;gap:12px}.check{background:#fff;border:1px solid #e0edf8;padding:16px 18px;border-radius:16px;font-weight:700}.check small{display:block;font-weight:400;color:#60758e;margin-top:5px;line-height:1.5}
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.media-card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid #e1eef8}.media-card video{width:100%;display:block;background:#061f49;max-height:420px}.media-card div{padding:18px}.media-card h3{margin:0 0 6px}.media-card p{margin:0;color:#657890;line-height:1.5}
+.facts{background:#edf9ff}.fact-img{width:100%;border-radius:26px;box-shadow:var(--shadow);border:5px solid #fff}
+.form-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.contact-box{background:linear-gradient(145deg,#06224f,#0874ea);color:#fff;border-radius:28px;padding:34px}.contact-box h2{font-size:38px;margin-top:0}.contact-box p{line-height:1.7;opacity:.9}.contact-item{margin-top:20px}.contact-item strong{display:block}.form{background:#fff;border-radius:28px;padding:30px;box-shadow:var(--shadow);border:1px solid #e3eff8}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:800}.field input,.field select,.field textarea{font:inherit;padding:13px 14px;border:1px solid #d7e6f2;border-radius:12px;outline:none}.field textarea{min-height:110px;resize:vertical}.form-note{font-size:12px;color:#6a7c91;margin-top:12px}
+footer{padding:30px 0;background:#041a3c;color:#cbd9ea}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:#fff}
+@media(max-width:850px){nav{display:none}.menu{display:block;border:0;background:#eef7ff;border-radius:10px;padding:10px}.hero-grid,.two,.form-wrap{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.media-grid{grid-template-columns:1fr}.hero{padding-top:40px}}
+@media(max-width:560px){.cards,.process-grid,.form-grid{grid-template-columns:1fr}section{padding:55px 0}.section-head h2{font-size:30px}.hero p{font-size:16px}.footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="brand" href="#inicio"><span class="brand-bubble">O₃</span> Clean OOO</a>
+  <nav><a href="#servicos">Serviços</a><a href="#como">Como funciona</a><a href="#ozonio">Ozônio & UV</a><a href="#curiosidades">Curiosidades</a><a href="#agendamento">Agendamento</a></nav>
+  <button class="menu" onclick="alert('Use os links da página para navegar.')">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid">
+  <div>
+    <span class="eyebrow">OXI-SANITIZAÇÃO • OZÔNIO • UV</span>
+    <h1>Ar mais limpo.<br><span>Ambientes mais cuidados.</span></h1>
+    <p>A Clean OOO utiliza a <strong>NXT19</strong>, geradora de ozônio, combinada com tecnologia UV conforme a aplicação, para atendimento em ambientes e veículos.</p>
+    <div class="buttons"><a class="btn primary" href="#agendamento">Agendar atendimento</a><a class="btn secondary" href="#servicos">Conhecer serviços</a></div>
+  </div>
+  <div class="hero-art"><img src="assets/voce-sabia.png" alt="Personagem Clean OOO explicando benefícios do ozônio"><div class="floating">✨ Tecnologia + cuidado</div></div>
+</div></section>
+
+<section id="servicos"><div class="container">
+  <div class="section-head"><h2>Serviços Clean OOO</h2><p>Uma apresentação simples e profissional para mostrar o que você oferece e facilitar o contato com seus clientes.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">🚗</div><h3>Veículos</h3><p>Oxi-sanitização de carros, utilitários e outros veículos, com foco em odores e higienização de áreas internas.</p></article>
+    <article class="card"><div class="icon">🏠</div><h3>Ambientes</h3><p>Atendimento para residências, escritórios, salas, estabelecimentos e outros espaços.</p></article>
+    <article class="card"><div class="icon">💡</div><h3>Ozônio + UV</h3><p>Aplicação das tecnologias de acordo com o serviço e o ambiente, seguindo procedimentos de segurança.</p></article>
+  </div>
+</div></section>
+
+<section class="process" id="como"><div class="container">
+  <div class="section-head"><h2>Como funciona</h2><p>Do cadastro ao atendimento, tudo pode ser organizado de forma simples.</p></div>
+  <div class="process-grid">
+    <div class="step"><span class="num">01</span><h3>Cadastro</h3><p>Preencha seus dados e informe o tipo de ambiente ou veículo.</p></div>
+    <div class="step"><span class="num">02</span><h3>Avaliação</h3><p>Definimos a aplicação adequada para o serviço solicitado.</p></div>
+    <div class="step"><span class="num">03</span><h3>Agendamento</h3><p>Escolha a melhor data e horário para o atendimento.</p></div>
+    <div class="step"><span class="num">04</span><h3>Oxi-sanitização</h3><p>Realizamos o procedimento com equipamentos e protocolos adequados.</p></div>
+  </div>
+</div></section>
+
+<section id="ozonio"><div class="container two">
+  <img class="visual" src="assets/personagem-ozonio.jpg" alt="Personagem Clean OOO com ozônio">
+  <div><div class="section-head" style="text-align:left;margin:0 0 22px"><h2>Ozônio e UV: entenda</h2><p>O ozônio (O₃) é uma forma triatômica do oxigênio. Na oxi-sanitização, ele é utilizado como agente oxidante. A luz UV-C, quando aplicada em sistemas adequados, também pode ser usada para reduzir microrganismos em superfícies ou no ar.</p></div>
+    <div class="checklist">
+      <div class="check">🫧 O₃ — ação oxidante<small>O ozônio pode reagir com compostos responsáveis por odores e com diversos microrganismos.</small></div>
+      <div class="check">💨 Alcance em locais difíceis<small>Como gás, o ozônio pode alcançar frestas, tecidos e espaços onde a limpeza manual tem dificuldade de chegar.</small></div>
+      <div class="check">☀️ UV — tecnologia complementar<small>UV-C pode ser usada em equipamentos e aplicações específicas, respeitando dose, tempo de exposição e segurança.</small></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="curiosidades" class="facts"><div class="container">
+  <div class="section-head"><h2>Você sabia?</h2><p>Curiosidades para ajudar seus clientes a entenderem a tecnologia.</p></div>
+  <img class="fact-img" src="assets/voce-sabia.png" alt="Infográfico Você sabia sobre ozônio">
+</div></section>
+
+<section><div class="container">
+  <div class="section-head"><h2>Veja a Clean OOO em ação</h2><p>Área preparada para os vídeos que você enviou.</p></div>
+  <div class="media-grid">
+    <article class="media-card"><video controls playsinline preload="metadata"><source src="assets/video-01.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video><div><h3>Vídeo demonstrativo 01</h3><p>Apresente aqui o processo, equipamento ou resultado do atendimento.</p></div></article>
+    <article class="media-card"><video controls playsinline preload="metadata"><source src="assets/video-02.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video><div><h3>Vídeo demonstrativo 02</h3><p>Use este espaço para mostrar bastidores, explicações ou depoimentos.</p></div></article>
+  </div>
+</div></section>
+
+<section id="agendamento"><div class="container form-wrap">
+  <div class="contact-box"><h2>Agende seu atendimento</h2><p>Cadastre seus dados para solicitar um atendimento de oxi-sanitização em ambiente ou veículo.</p>
+    <div class="contact-item"><strong>📱 WhatsApp</strong><span>adicione seu número aqui</span></div>
+    <div class="contact-item"><strong>📍 Atendimento</strong><span>adicione sua cidade/região aqui</span></div>
+    <div class="contact-item"><strong>🕐 Horários</strong><span>adicione seus horários aqui</span></div>
+  </div>
+  <form class="form" onsubmit="enviarFormulario(event)">
+    <div class="form-grid">
+      <div class="field"><label>Nome</label><input required name="nome" placeholder="Seu nome"></div>
+      <div class="field"><label>Telefone</label><input required name="telefone" placeholder="(00) 00000-0000"></div>
+      <div class="field"><label>Tipo de serviço</label><select name="servico"><option>Veículo</option><option>Ambiente residencial</option><option>Ambiente comercial</option><option>Ozônio + UV</option><option>Outro</option></select></div>
+      <div class="field"><label>Data desejada</label><input type="date" name="data"></div>
+      <div class="field full"><label>Mensagem</label><textarea name="mensagem" placeholder="Conte um pouco sobre o local, veículo ou necessidade."></textarea></div>
+    </div>
+    <button class="btn primary" style="width:100%;margin-top:16px;border:0;cursor:pointer" type="submit">Enviar solicitação</button>
+    <div class="form-note">O formulário desta versão demonstra o cadastro no navegador. Para receber os dados de verdade, conecte-o ao WhatsApp, e-mail, Google Forms ou banco de dados.</div>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="container footer"><div><strong>Clean OOO</strong><br>Oxi-sanitização • Ozônio • UV</div><div>© <span id="ano"></span> Clean OOO</div></div></footer>
+
+<script>
+document.getElementById('ano').textContent = new Date().getFullYear();
+function enviarFormulario(e){
+  e.preventDefault();
+  const f = new FormData(e.target);
+  alert(`Obrigado, ${f.get('nome')}! Seu pedido de ${f.get('servico')} foi registrado nesta demonstração. Agora podemos conectar este formulário ao seu WhatsApp.`);
+}
+</script>
+</body>
+</html>
